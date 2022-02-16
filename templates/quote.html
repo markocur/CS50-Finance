@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Stock symbol" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Quote</button>
+    </form>
+    <!--<div id="result">-->
+    <!--    Your result-->
+    <!--</div>-->
+    <!--<script-->
+			 <!-- src="https://code.jquery.com/jquery-3.6.0.min.js"-->
+			 <!-- integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="-->
+			 <!-- crossorigin="anonymous"></script>-->
+    <!--<script>-->
+    <!--    let button = document.querySelector('button');-->
+    <!--    button.addEventListener('click', function() {-->
+    <!--        $.get('/quote', function(name, price) {-->
+    <!--            document.querySelector('#result').innerHTML = "Name: " + name + " Price: " + price;-->
+    <!--        });-->
+    <!--    });-->
+    <!--</script>-->
+{% endblock %}
